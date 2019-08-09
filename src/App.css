@@ -1,33 +1,37 @@
-.App {
+.decklist {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#user-list {
+  height: 800px;
+  width: 80%;
+  margin: auto;
+}
+
+#match-button {
+  height: 80px;
+  width: 150px;
+  margin: auto;
+}
+
+.T1Matches {
+  color: red;
+}
+
+.T2Matches {
+  color: orange;
+}
+
+.T3Matches {
+  color: yellow;
+}
+
+.edited {
+  color: dodgerblue;
 }
