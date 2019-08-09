@@ -17,11 +17,15 @@ export default class Decklist extends Component {
     handleClick = () => {
         const deckListArray = this.state.value.split('\n')
 
+        function filterEntries(banlistArray) {
+            return banlistArray.filter(banlistEntry => deckListArray.find(el => el.includes(banlistEntry)))
+        }
+
         this.setState({
-            tierOneMatches: deckListArray.filter(entry => banlist.T1.includes(entry)),
-            tierTwoMatches: deckListArray.filter(entry => banlist.T2.includes(entry)),
-            tierThreeMatches: deckListArray.filter(entry => banlist.T3.includes(entry)),
-            editedMatches: deckListArray.filter(entry => banlist.edited.includes(entry))
+            tierOneMatches: filterEntries(banlist.T1),
+            tierTwoMatches: filterEntries(banlist.T2),
+            tierThreeMatches: filterEntries(banlist.T3),
+            editedMatches: filterEntries(banlist.edited)
         })
     }
 
