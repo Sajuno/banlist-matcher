@@ -5,6 +5,8 @@ export const banlist = {
         "Aetherflux Reservoir",
         "An-Zerrin Ruins",
         "Animate Dead",
+        "Palinchron",
+        "Great Whale",
         "Approach of the Second Sun",
         "Axis of Mortality",
         "Bolas's Citadel",
