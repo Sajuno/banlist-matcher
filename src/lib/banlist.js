@@ -10,6 +10,7 @@ export const banlist = {
         "Approach of the Second Sun",
         "Axis of Mortality",
         "Bolas's Citadel",
+        "Nyxbloom Ancient",
         "Mana Crypt",
         "Mana Vault",
         "Hive Mind",
